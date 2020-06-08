@@ -51,8 +51,78 @@ Object.defineProperty(HTOTDocument, 'formulieren', {
   get: function () { return this.forms },
   set: function (value) { this.forms = value }
 })
+Object.defineProperty(HTOTDocument, 'volledigSchermElement', {
+  get: function () { return this.fullscreenElement },
+  set: function (value) { this.fullscreenElement = value }
+})
+Object.defineProperty(HTOTDocument, 'volledigSchermIngeschakeld', {
+  get: function () { return this.fullscreenEnabled },
+  set: function (value) { this.fullscreenEnabled = value }
+})
+Object.defineProperty(HTOTDocument, 'hoofd', {
+  get: function () { return this.head },
+  set: function (value) { this.head = value }
+})
+Object.defineProperty(HTOTDocument, 'afbeeldingen', {
+  get: function () { return this.images },
+  set: function (value) { this.images = value }
+})
+Object.defineProperty(HTOTDocument, 'implementatie', {
+  get: function () { return this.implementation },
+  set: function (value) { this.implementation = value }
+})
+Object.defineProperty(HTOTDocument, 'invoerCodering', {
+  get: function () { return this.inputEncoding },
+  set: function (value) { this.inputEncoding = value }
+})
+Object.defineProperty(HTOTDocument, 'laatstGewijzigd', {
+  get: function () { return this.lastModified },
+  set: function (value) { this.lastModified = value }
+})
+Object.defineProperty(HTOTDocument, 'gereedStaat', {
+  get: function () { return this.readyState },
+  set: function (value) { this.readyState = value }
+})
+Object.defineProperty(HTOTDocument, 'refereerder', {
+  get: function () { return this.referrer },
+  set: function (value) { this.referrer = value }
+})
+Object.defineProperty(HTOTDocument, 'strikteFoutControle', {
+  get: function () { return this.strictErrorChecking },
+  set: function (value) { this.strictErrorChecking = value }
+})
+Object.defineProperty(HTOTDocument, 'titel', {
+  get: function () { return this.title },
+  set: function (value) { this.title = value }
+})
+Object.defineProperty(HTOTDocument, 'UBL', {
+  get: function () { return this.URL },
+  set: function (value) { this.URL = value }
+})
 
+HTOTDocument.voegEvenementLuisteraarToe = HTOTDocument.addEventListener
+HTOTDocument.adopteerKnooppunt = HTOTDocument.adoptNode
+HTOTDocument.sluit = HTOTDocument.close
+HTOTDocument.creëerAttribuut = HTOTDocument.createAttribute
+HTOTDocument.creëerOpmerking = HTOTDocument.createComment
+HTOTDocument.creëerDocumentFragment = HTOTDocument.createDocumentFragment
+HTOTDocument.creëerElement = HTOTDocument.createElement
+HTOTDocument.creëerEvenement = HTOTDocument.createEvent
+HTOTDocument.creëerTekstKnooppunt = HTOTDocument.createTextNode
+HTOTDocument.voerCommandoUit = HTOTDocument.execCommand
 HTOTDocument.krijgElementBijId = HTOTDocument.getElementById
+HTOTDocument.krijgElementenBijKlasnaam = HTOTDocument.getElementsByClassName
+HTOTDocument.krijgElementenBijNaam = HTOTDocument.getElementsByName
+HTOTDocument.krijgElementenBijLabelnaam = HTOTDocument.getElementsByTagName
+HTOTDocument.heeftFocus = HTOTDocument.hasFocus
+HTOTDocument.importeerKnooppunt = HTOTDocument.importNode
+HTOTDocument.normaliseer = HTOTDocument.normalize
+HTOTDocument.normaliseerDocument = HTOTDocument.normalizeDocument
+HTOTDocument.vraagSelector = HTOTDocument.querySelector
+HTOTDocument.vraagSelectorAlles = HTOTDocument.querySelectorAll
+HTOTDocument.haalEvenementLuisteraarweg = HTOTDocument.removeEventListener
+HTOTDocument.schrijf = HTOTDocument.write
+HTOTDocument.schrijfLijn = HTOTDocument.writeLn
 
 /*
  * HTMLDocument end
