@@ -1,8 +1,25 @@
 const Reeks = Array.prototype
 
+Object.defineProperty(Reeks.constructor, 'naam', {
+    get: function () { return this.name },
+    set: function (value) { this.name = value }
+})
+Object.defineProperty(Reeks.constructor, 'argumenten', {
+    get: function () { return this.arguments },
+    set: function (value) { this.arguments = value }
+})
+Object.defineProperty(Reeks.constructor, 'aanroeper', {
+    get: function () { return this.caller },
+    set: function (value) { this.caller = value }
+})
+Reeks.constructor.brengAan = Reeks.constructor.apply
+Reeks.constructor.verbind = Reeks.constructor.bind
+Reeks.constructor.roepAan = Reeks.constructor.call
+Reeks.constructor.naarDraad = Reeks.constructor.toString
+
 Object.defineProperty(Reeks, 'lengte', {
-  get: function () { return this.length },
-  set: function (value) { this.length = value }
+    get: function () { return this.length },
+    set: function (value) { this.length = value }
 })
 
 Reeks.aaneenschakelen = Reeks.concat

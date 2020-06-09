@@ -1,5 +1,22 @@
 const Datum = Date.prototype
 
+Object.defineProperty(Datum.constructor, 'naam', {
+    get: function () { return this.name },
+    set: function (value) { this.name = value }
+})
+Object.defineProperty(Datum.constructor, 'argumenten', {
+    get: function () { return this.arguments },
+    set: function (value) { this.arguments = value }
+})
+Object.defineProperty(Datum.constructor, 'aanroeper', {
+    get: function () { return this.caller },
+    set: function (value) { this.caller = value }
+})
+Datum.constructor.brengAan = Datum.constructor.apply
+Datum.constructor.verbind = Datum.constructor.bind
+Datum.constructor.roepAan = Datum.constructor.call
+Datum.constructor.naarDraad = Datum.constructor.toString
+
 Datum.krijgDatum = Datum.getDate
 Datum.krijgDag = Datum.getDay
 Datum.krijgVolledigJaar = Datum.getFullYear
