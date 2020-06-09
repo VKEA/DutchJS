@@ -182,6 +182,42 @@ Object.defineProperty(HTOTElement, 'titel', {
 })
 
 HTOTElement.voegEvenementLuisteraarToe = HTOTElement.addEventListener
-
+HTOTElement.voegKindToe = HTOTElement.appendChild
+HTOTElement.vervaag = HTOTElement.blur
+HTOTElement.klik = HTOTElement.click
+HTOTElement.kloonKnooppunt = HTOTElement.cloneNode
+HTOTElement.vergelijkDocumentPositie = HTOTElement.compareDocumentPosition
+HTOTElement.heeft = HTOTElement.contains
+HTOTElement.verlatVolledigScherm = HTOTElement.exitFullScreen
+HTOTElement.krijgAttribuut = HTOTElement.getAttribute
+HTOTElement.krijgAttribuutKnooppunt = HTOTElement.getAttributeNode
+HTOTElement.krijgBegrenzendeCliëntRechthoek = HTOTElement.getBoundingClientRect
+HTOTElement.krijgElementenBijKlasnaam = HTOTElement.getElementsByClassName
+HTOTElement.krijgElementenBijLabelnaam = HTOTElement.getElementsByTagName
+HTOTElement.heeftAttribuut = HTOTElement.hasAttribute
+HTOTElement.heeftAttributen = HTOTElement.hasAttributes
+HTOTElement.heeftKindKnooppunten = HTOTElement.hasChildNodes
+HTOTElement.plaatsNaastgelegenElement = HTOTElement.insertAdjacentElement
+HTOTElement.plaatsNaastgelegenHTOT = HTOTElement.insertAdjacentHTML
+HTOTElement.plaatsNaastgelegenTekst = HTOTElement.insertAdjacentText
+HTOTElement.plaatsVoor = HTOTElement.insertBefore
+HTOTElement.isStandaardNaamruimte = HTOTElement.isDefaultNamespace
+HTOTElement.isGelijkAanKnooppunt = HTOTElement.isEqualNode
+HTOTElement.isHetzelfdeKnooppunt = HTOTElement.isSameNode
+HTOTElement.isOndersteund = HTOTElement.isSupported
+HTOTElement.normaliseer = HTOTElement.normalize
+HTOTElement.vraagSelector = HTOTElement.querySelector
+HTOTElement.vraagSelectorAlles = HTOTElement.querySelectorAll
+HTOTElement.haalWeg = HTOTElement.remove
+HTOTElement.haalAttribuutWeg = HTOTElement.removeAttribute
+HTOTElement.haalAttribuutKnooppuntWeg = HTOTElement.removeAttributeNode
+HTOTElement.haalKindWeg = HTOTElement.removeChild
+HTOTElement.haalEvenementLuisteraarWeg = HTOTElement.removeEventListener
+HTOTElement.vervangKind = HTOTElement.replaceChild
+HTOTElement.verzoekVolledigScherm = HTOTElement.requestFullscreen
+HTOTElement.scrollInWeergave = HTOTElement.scrollIntoView
+HTOTElement.zetAttribuut = HTOTElement.setAttribute
+HTOTElement.zetAttribuutKnooppunt = HTOTElement.setAttributeNode
+HTOTElement.naarDraad = HTOTElement.toString
 
 export default HTOTElement
