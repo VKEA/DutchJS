@@ -1,2 +1,2 @@
-import HTOTDocument from './Classes/HTMLDocument.js'
-import HTOTElement from './Classes/HTMLElement.js'
+import HTOTDocument from './Classes/DOM/HTMLDocument.js'
+import HTOTElement from './Classes/DOM/HTMLElement.js'
