@@ -1,4 +1,4 @@
-Boolean.prototype.naarDraad = Array.toString
-Boolean.prototype.waardeVan = Array.valueOf
+Boolean.prototype.naarDraad = Boolean.prototype.toString
+Boolean.prototype.waardeVan = Boolean.prototype.valueOf
 
 export default Boolean

@@ -1,5 +1,9 @@
 const HTOTDocument = HTMLDocument.prototype
 
+Object.defineProperty(HTOTDocument, 'naam', {
+  get: function () { return this.name },
+  set: function (value) { this.name = value }
+})
 Object.defineProperty(HTOTDocument, 'actiefElement', {
   get: function () { return this.activeElement },
   set: function (value) { this.activeElement = value }

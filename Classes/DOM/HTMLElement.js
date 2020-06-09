@@ -1,5 +1,9 @@
 const HTOTElement = HTMLElement.prototype
 
+Object.defineProperty(HTOTElement, 'naam', {
+  get: function () { return this.name },
+  set: function (value) { this.name = value }
+})
 Object.defineProperty(HTOTElement, 'toegangsSleutel', {
   get: function () { return this.accessKey },
   set: function (value) { this.accessKey = value }
