@@ -1,6 +1,4 @@
-const Boolean = Boolean.prototype
-
-Boolean.naarDraad = Array.toString
-Boolean.waardeVan = Array.valueOf
+Boolean.prototype.naarDraad = Array.toString
+Boolean.prototype.waardeVan = Array.valueOf
 
 export default Boolean
